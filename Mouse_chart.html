@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mouse Population</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>body { font-family: Arial, sans-serif; margin: 20px; }</style>
+</head>
+<body>
+<h1>Mouse Population Growth</h1>
+<div style="width: 800px; height: 400px;">
+<canvas id="populationChart"></canvas>
+</div>
+<script>
+const ctx = document.getElementById('populationChart');
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["0","1","2","3"],
+    datasets: [{
+      label: 'Population',
+      data: [10, 150, 2485, 45218],
+      borderColor: 'rgb(54, 162, 235)',
+      backgroundColor: 'rgba(54, 162, 235, 0.1)',
+      fill: true,
+      tension: 0.3
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      title: { display: true, text: 'Mouse Population Growth' }
+    },
+    scales: {
+      y: { beginAtZero: true, title: { display: true, text: 'Population' } },
+      x: { title: { display: true, text: 'Year' } }
+    }
+  }
+});
+</script>
+</body>
+</html>

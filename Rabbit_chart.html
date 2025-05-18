@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rabbit Population</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>body { font-family: Arial, sans-serif; margin: 20px; }</style>
+</head>
+<body>
+<h1>Rabbit Population Growth</h1>
+<div style="width: 800px; height: 400px;">
+<canvas id="populationChart"></canvas>
+</div>
+<script>
+const ctx = document.getElementById('populationChart');
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["0","1","2","3","4","5","6","7","8","9","10"],
+    datasets: [{
+      label: 'Population',
+      data: [15, 250, 4450, 81735, 1000000, 1000000, 1000000, 1000000, 1000000, 1000000, 1000000],
+      borderColor: 'rgb(54, 162, 235)',
+      backgroundColor: 'rgba(54, 162, 235, 0.1)',
+      fill: true,
+      tension: 0.3
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      title: { display: true, text: 'Rabbit Population Growth' }
+    },
+    scales: {
+      y: { beginAtZero: true, title: { display: true, text: 'Population' } },
+      x: { title: { display: true, text: 'Year' } }
+    }
+  }
+});
+</script>
+</body>
+</html>

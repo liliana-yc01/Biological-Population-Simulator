@@ -1,0 +1,155 @@
+/* Main application styling - Light Green/White Theme */
+.root {
+    -fx-base: #e8f5e9;          /* Very light green */
+    -fx-background: #f1f8e9;    /* Pale green background */
+    -fx-control-inner-background: white;
+    -fx-text-fill: #2e7d32;     /* Dark green text */
+    -fx-accent: #66bb6a;        /* Medium green for accents */
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: #66bb6a;  /* Medium green */
+    -fx-text-fill: white;
+	-fx-font-size: 15px;
+    -fx-padding: 10 25 10 25;
+    -fx-background-radius: 4;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 4, 0.2, 0, 1);
+}
+
+.button:hover {
+    -fx-background-color: #57a85a;  /* Slightly darker green */
+}
+
+.button:pressed {
+    -fx-background-color: #4c9c4f;  /* Darker green */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 2, 0.1, 0, 1);
+}
+
+/* Text area styling */
+.text-area {
+    -fx-control-inner-background: white;
+    -fx-text-fill: #1b5e20;     /* Dark green text */
+    -fx-font-family: "Segoe UI", "Arial";
+    -fx-font-size: 15px;
+    -fx-border-color: #c8e6c9;
+    -fx-border-radius: 3;
+}
+
+.text-area .content {
+    -fx-background-color: -fx-control-inner-background;
+    -fx-background-radius: 2;
+}
+
+/* Chart styling */
+.chart {
+    -fx-background-color: white;
+    -fx-legend-visible: false;
+    -fx-padding: 15px;
+    -fx-border-color: #dcedc8;
+    -fx-border-radius: 5;
+}
+
+.chart-plot-background {
+    -fx-background-color: white;
+}
+
+.chart-title {
+    -fx-text-fill: #2e7d32;     /* Dark green */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.axis {
+    -fx-tick-label-fill: #4caf50;   /* Medium green */
+    -fx-tick-mark-visible: true;
+}
+
+.axis-label {
+    -fx-text-fill: #4caf50;         /* Medium green */
+}
+
+.chart-series-line {
+    -fx-stroke: #81c784;            /* Soft green */
+    -fx-stroke-width: 2px;
+}
+
+.chart-line-symbol {
+    -fx-background-color: #81c784, white;  /* Green with white border */
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+
+/* Label styling */
+.label {
+    -fx-text-fill: #2e7d32;         /* Dark green */
+    -fx-font-size: 14px;
+}
+
+.header-label {
+    -fx-text-fill: #1b5e20;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Text field styling */
+.text-field {
+    -fx-background-color: white;
+    -fx-text-fill: #1b5e20;         /* Dark green */
+    -fx-prompt-text-fill: #a5d6a7;  /* Light green */
+    -fx-font-size: 14px;
+    -fx-border-color: #c8e6c9;
+    -fx-border-radius: 3;
+}
+
+/* Grid pane styling */
+.grid-pane {
+    -fx-background-color: #f1f8e9;  /* Pale green */
+    -fx-padding: 15px;
+    -fx-border-color: #dcedc8;
+    -fx-border-radius: 5;
+}
+
+/* Tab pane styling */
+.tab-pane {
+    -fx-background-color: #e8f5e9;  /* Very light green */
+}
+
+.tab {
+    -fx-background-color: #dcedc8;  /* Light green */
+    -fx-background-radius: 5 5 0 0;
+}
+
+.tab:selected {
+    -fx-background-color: #81c784;  /* Medium green */
+    -fx-text-fill: white;
+}
+
+/* Scroll bar styling */
+.scroll-bar:horizontal, .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #c8e6c9;  /* Light green */
+    -fx-background-radius: 5;
+}
+
+/* Table view styling */
+.table-view {
+    -fx-base: white;
+    -fx-control-inner-background: white;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: #c8e6c9;
+}
+
+/* Progress bar styling */
+.progress-bar .track {
+    -fx-background-color: #e8f5e9;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #66bb6a;
+}
